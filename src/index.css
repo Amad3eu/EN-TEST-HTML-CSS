@@ -1,0 +1,10 @@
+@import url(vendor/fonts.css);
+@import url(blocks/main/wrapper.css);
+@import url(blocks/header/header.css);
+@import url(blocks/main/button/button.css);
+@import url(blocks/main/preloader/preloader.css);
+@import url(blocks/preloader/preloader.css);
+@import url(blocks/results/results.css);
+@import url(blocks/main/about/about.css);
+@import url(blocks/main/footer/footer.css);
+@import url(blocks/main/scroll-lock/scroll-lock.css);

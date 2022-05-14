@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="" />
+    <meta name="description" content="Articles saver" />
+    <title>Explorer</title>
+    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="stylesheet" href="%=htmlWebpackPlugin.files.chunks.main.css %" />
+    <!-- <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+    /> -->
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+  </head>
+
+  <body>
+    <div class="root__section">
+      <header class="header">
+        <div class="menu">
+          <!-- Excellent: Using a link for a logo is the right decision! -->
+          <a href="./" class="menu__logo">Explorer</a>
+          <div class="menu__mobile" id="mobile-menu"></div>
+          <div class="menu__items-list">
+            <a href="./" class="menu__link menu__link_selected">Home</a>
+            <div class="menu__items-single-item">
+              <span class="menu__link menu__link--logged"
+                >User
+                <span class="menu__logout"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="header__title-wrapper">
+          <h1 class="header__title">What's going on in the world?</h1>
+          <p class="header__subtitle">
+            <b
+              >Find the latest news on any topic and save them in your personal
+              account.</b
+            >
+          </p>
+          <!-- Needs correcting: Form elements should be wrapped in the <form> tag.
+      You can find more details about the form and its attributes here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+          <div class="header__form">
+            <input
+              class="header__form-input"
+              type="text"
+              name="search"
+              placeholder="Yellowstone"
+              required
+            />
+            <span class="button header__button">Search</span>
+          </div>
+        </div>
+      </header>
+      <section class="preloader">
+        <div class="preloader__message" id="preloader-searching">
+          <i class="circle-preloader"></i>
+          <h5 class="preloader__subtitle">Searching for news...</h5>
+        </div>
+        <div
+          class="preloader__message preloader__hide"
+          id="preloader-not-found"
+        >
+          <img class="preloader__icon" src="./images/not-found.svg" alt="no" />
+          <h5 class="preloader__title">Nothing found</h5>
+          <h4 class="preloader__subtitle">
+            Sorry, but nothing matched your search terms.
+          </h4>
+        </div>
+      </section>
+      <main class="results">
+        <h3 class="results__title">Search results</h3>
+        <div class="results__news">
+          <a href="#" class="card">
+            <div class="card__body">
+              <div class="card_image-wrapper">
+                <div class="card_img"></div>
+              </div>
+              <div class="card__icon"></div>
+              <p class="card__warning">Sign in to save articles</p>
+              <div class="card_wrapper">
+                <!-- Can be better: There is a special <time> tag for dates.
+            This element is for presenting dates and times in a machine readable format.
+            For example, this can help a user agent offer to add an event to a user's calendar.
+            You can learn more about this tag and its usage here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
+            -->
+                <p class="card_date">November 4, 2020</p>
+                <h4 class="card_title">Why do we use it?</h4>
+                <div class="card_text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like).
+                </div>
+              </div>
+            </div>
+            <p class="card_src">lipsum.com</p>
+          </a>
+          <a href="#" class="card">
+            <div class="card__body">
+              <div class="card_image-wrapper">
+                <div class="card_img"></div>
+              </div>
+              <div class="card__icon"></div>
+              <p class="card__warning">Sign in to save articles</p>
+              <div class="card_wrapper">
+                <p class="card_date">November 4, 2020</p>
+                <h4 class="card_title">Why do we use it?</h4>
+                <div class="card_text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like).
+                </div>
+              </div>
+            </div>
+            <p class="card_src">lipsum.com</p>
+          </a>
+          <a href="#" class="card">
+            <div class="card__body">
+              <div class="card_image-wrapper">
+                <div class="card_img"></div>
+              </div>
+              <div class="card__icon"></div>
+              <p class="card__warning">Sign in to save articles</p>
+              <div class="card_wrapper">
+                <p class="card_date">November 4, 2020</p>
+                <h4 class="card_title">Why do we use it?</h4>
+                <div class="card_text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like).
+                </div>
+              </div>
+            </div>
+            <p class="card_src">lipsum.com</p>
+          </a>
+          <a href="#" class="card">
+            <div class="card__body">
+              <div class="card_image-wrapper">
+                <div class="card_img"></div>
+              </div>
+              <div class="card__icon card__icon_marked"></div>
+              <p class="card__warning">Sign in to save articles</p>
+              <div class="card_wrapper">
+                <p class="card_date">November 4, 2020</p>
+                <h4 class="card_title">Why do we use it?</h4>
+                <div class="card_text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like).
+                </div>
+              </div>
+            </div>
+            <p class="card_src">lipsum.com</p>
+          </a>
+        </div>
+        <button class="button results__button">Show more</button>
+      </main>
+      <section class="about results__about">
+        <h3 class="about__title">About the author</h3>
+        <div class="about__text">
+          Vivamus sed volutpat odio. Praesent placerat gravida erat, in ornare
+          ex. <br />
+          Nullam vitae tellus euismod, egestas diam vel, maximus orci. Nulla
+          fringilla, enim ut pharetra rhoncus, arcu enim aliquet turpis, ac
+          tempus dolor lacus a velit. Donec semper velit eu volutpat bibendum.
+          <br />
+          In ultricies dolor quis neque pellentesque pharetra. Donec nibh urna,
+          suscipit in feugiat at, facilisis et turpis. Fusce blandit tincidunt
+          libero, sed ornare sapien tincidunt nec. Curabitur quis fermentum
+          felis.
+        </div>
+        <div class="about__text">
+          Quisque urna magna, molestie id nisl vitae, bibendum auctor sem.
+          <br />
+          Aliquam efficitur orci elit, lacinia fringilla nibh aliquet non. Morbi
+          consectetur tincidunt dui in rhoncus. Vestibulum imperdiet luctus
+          sodales. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos. Sed vitae tincidunt sem.
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__legal">© 2021</p>
+        <ul class="footer__menu">
+          <li class="footer__menu-item"><a href="./">Home</a></li>
+          <li class="footer__menu-item">
+            <a href="./about/">About the project</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="https://praktikum.yandex.ru" target="_blank"
+              >Practicum by Yandex</a
+            >
+          </li>
+        </ul>
+        <p class="footer__links">
+          <a href="#" class="footer__social-icon" target="_blank">
+            <img src="<%= require('./images/social/git.svg')%>" alt="Logo" />
+          </a>
+          <br />
+          <a href="#" class="footer__social-icon" target="_blank">
+            <img
+              src="<%= require('./images/social/facebook.svg')%>"
+              alt="Logo"
+            />
+          </a>
+          <br />
+        </p>
+      </footer>
+    </div>
+    <div id="modal">
+      <section class="auth-form__wrapper_hide" id="login-form">
+        <form class="auth-form">
+          <div class="auth-form__close" id="close-login-form"></div>
+          <h4 class="auth-form__title">Sign in</h4>
+          <span class="auth-form__subtitle">E-mail</span>
+          <input
+            class="auth-form__input"
+            type="email"
+            placeholder="Enter email"
+            required
+          />
+          <span class="auth-form__error-message" id="error-email-login">
+            Invalid email address
+          </span>
+          <span class="auth-form__subtitle">Password</span>
+          <input
+            class="auth-form__input"
+            type="password"
+            placeholder="Enter password"
+            required
+          />
+          <span
+            class="auth-form__error-message auth-form__error-message_hide"
+            id="error-password-login"
+          >
+            Field can not be empty
+          </span>
+          <span
+            class="auth-form__error-message auth-form__error-message_usr-exists"
+            id="error-not-logged"
+          >
+            Invalid email address or password
+          </span>
+          <button
+            class="button auth-form__button"
+            name="login-button"
+            type="submit"
+            disabled
+          >
+            Sign in
+          </button>
+          <span class="auth-form__other-action">
+            or
+            <span class="auth-form__other-action-click" id="open-signup-form"
+              >Sign up</span
+            >
+          </span>
+        </form>
+      </section>
+
+      <section class="auth-form__wrapper_hide" id="signup-form">
+        <form class="auth-form">
+          <div class="auth-form__close" id="close-signup-form"></div>
+          <h4 class="auth-form__title">Sign up</h4>
+          <span class="auth-form__subtitle">E-mail</span>
+          <input
+            class="auth-form__input"
+            name="email"
+            placeholder="Enter email"
+            type="email"
+            required
+          />
+          <span
+            class="auth-form__error-message auth-form__error-message_hide"
+            id="error-email"
+          >
+            Invalid email address</span
+          >
+          <span class="auth-form__subtitle">Password</span>
+          <input
+            class="auth-form__input"
+            type="password"
+            placeholder="Enter password"
+            minlength="8"
+            required
+          />
+          <span class="auth-form__error-message" id="error-password">
+            Password must be 8 or more characters long
+          </span>
+          <span class="auth-form__subtitle">Name</span>
+          <input
+            class="auth-form__input"
+            placeholder="Enter name"
+            required
+            minlength="2"
+          />
+          <span
+            class="auth-form__error-message auth-form__error-message_hide"
+            id="error-name"
+          >
+            Enter the name
+          </span>
+          <span
+            class="auth-form__error-message auth-form__error-message_usr-exists"
+            id="error-register"
+          >
+            This email is not available
+          </span>
+          <button class="button auth-form__button" type="submit">
+            Sign up
+          </button>
+          <span class="auth-form__other-action">
+            or
+            <span class="auth-form__other-action-click" id="open-login-form"
+              >Sign in</span
+            >
+          </span>
+        </form>
+      </section>
+
+      <section class="auth-form__wrapper_hide" id="signup-ok">
+        <form class="auth-form">
+          <div class="auth-form__close" id="close-signup-ok-form"></div>
+          <h4 class="auth-form__title">Registration successfully completed!</h4>
+          <span class="auth-form__other-action auth-form__other-action_left">
+            <span class="auth-form__other-action-click" id="open-login-modal"
+              >Sign in</span
+            >
+          </span>
+        </form>
+      </section>
+
+      <div class="overlay"></div>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </body>
+</html>
