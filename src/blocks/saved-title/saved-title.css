@@ -1,0 +1,21 @@
+@import url(./__subtitle/saved-title__subtitle.css);
+@import url(./__header/saved-title__header.css);
+@import url(./__keywords/saved-title__keywords.css);
+
+.saved-title {
+  background-color: white;
+  padding: 40px 104px 56px 104px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .saved-title {
+    padding: 24px 40px 32px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .saved-title {
+    padding: 16px 16px 32px 16px;
+  }
+}

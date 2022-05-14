@@ -1,0 +1,29 @@
+.button.results__button {
+  margin: 64px auto 0 auto;
+  background-color: white;
+  color: black;
+  font-size: 1.12rem;
+  padding: 18px 60px 18px 60px;
+  box-shadow: none;
+  height: 50px;
+}
+
+.button.results__button:active {
+  background-color: #e8e8e9;
+}
+
+@media screen and (max-width: 1023px) {
+  .button.results__button {
+    margin: 32px auto 0 auto;
+    padding: 15px 40px 15px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button.results__button {
+    margin: 15px 16px 0 16px;
+    padding: 15px 0px 15px 0px;
+    width: calc(100% - 32px);
+    justify-content: center;
+  }
+}

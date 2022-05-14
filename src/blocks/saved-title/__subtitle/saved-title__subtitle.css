@@ -1,0 +1,19 @@
+.saved-title__subtitle {
+  font-family: "Roboto";
+  font-size: 1.12rem;
+  color: #8c8d90;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .saved-title__subtitle {
+    font-size: 0.87rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .saved-title__subtitle {
+    font-size: 0.75rem;
+  }
+}

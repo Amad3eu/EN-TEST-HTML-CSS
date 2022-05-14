@@ -1,0 +1,22 @@
+.results__news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+  margin: 64px 104px 0 104px;
+}
+
+@media screen and (max-width: 1023px) {
+  .results__news {
+    column-gap: 8px;
+    row-gap: 8px;
+    margin: 32px 40px 0 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .results__news {
+    grid-template-columns: 1fr;
+    margin: 24px 16px 0 16px;
+  }
+}
