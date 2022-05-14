@@ -1,0 +1,50 @@
+@import url(_selected/menu__items_selected.css);
+
+.menu__items-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu__items-single-item {
+  display: flex;
+  height: 100%;
+  margin-left: 32px;
+  box-sizing: border-box;
+  border-top: 3px rgba(255, 255, 255, 0) solid;
+  border-bottom: 3px rgba(255, 255, 255, 0) solid;
+}
+
+.menu__items-single-item:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu__items-single-item {
+    margin-right: 16px;
+  }
+  .menu__items-list {
+    display: block;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__items-list {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    background-color: #1a1b22;
+  }
+  .menu__items-single-item {
+    margin: 30px 16px 30px 16px;
+  }
+}
+
+.menu__items-list_show {
+  display: block;
+}

@@ -1,0 +1,12 @@
+@import url(./black/menu__logout_black.css);
+
+.menu__logout {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 4px;
+  background-image: url(../../../images/logout_white.svg);
+}

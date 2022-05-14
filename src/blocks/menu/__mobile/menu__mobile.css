@@ -1,0 +1,21 @@
+@import url(./_close/menu__mobile_close.css);
+@import url(./_black/menu__mobile_black.css);
+
+.menu__mobile {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../../images/menu_white.svg);
+  cursor: pointer;
+  display: none;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__mobile {
+    display: block;
+  }
+}

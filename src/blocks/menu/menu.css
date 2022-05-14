@@ -1,0 +1,39 @@
+@import url(__logo/menu__logo.css);
+@import url(__items/menu__items.css);
+@import url(__link/menu__link.css);
+@import url(__logout/menu__logout.css);
+@import url(__mobile/menu__mobile.css);
+
+.menu {
+  height: 80px;
+  position: relative;
+  box-shadow: inset 0px -1px 0px #d1d2d6;
+  display: flex;
+  padding: 0 104px 0 104px;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.menu_on-top {
+  z-index: 101;
+  background-color: #1a1b22;
+}
+
+.menu_on-top_black {
+  z-index: 101;
+  background-color: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    padding: 0 40px 0 40px;
+    height: 66px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    padding: 0 16px 0 16px;
+    height: 56px;
+  }
+}

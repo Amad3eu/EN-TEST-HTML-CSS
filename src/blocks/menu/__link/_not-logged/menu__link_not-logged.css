@@ -1,0 +1,31 @@
+.menu__link.menu__link_not-logged {
+  display: flex;
+  border-radius: 100px;
+  padding: 12px;
+  border: 1px solid #b6bcbf;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.menu__link.menu__link_not-logged:hover {
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu__link.menu__link_not-logged {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__link.menu__link_not-logged {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .menu__link.menu__link_not-logged {
+    width: calc(100% - 16px);
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.menu__items-single-item.menu__items-single-item_selected {
+  border-bottom: 3px #e5e5e5 solid;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__items-single-item.menu__items-single-item_selected {
+    border: 0;
+  }
+}
+
+.menu__items-single-item.menu__items-single-item_selected-black {
+  border-bottom: 3px black solid;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__items-single-item.menu__items-single-item_selected-black {
+    border: 0;
+  }
+}

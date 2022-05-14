@@ -1,0 +1,20 @@
+.menu__link.menu__link_black {
+  color: #b6bcbf;
+}
+
+.menu__link.menu__link_black:hover {
+  color: black;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu__link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__link.menu__link_black {
+    font-size: 1.12rem;
+    color: black;
+  }
+}

@@ -1,0 +1,11 @@
+.menu__link.menu__link_selected {
+  color: white;
+}
+
+.menu__link.menu__link_selected-black {
+  color: black;
+}
+
+.menu__link.menu__link_selected-black:hover {
+  color: black;
+}
