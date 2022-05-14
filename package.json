@@ -1,0 +1,50 @@
+{
+  "name": "rep",
+  "version": "1.0.0",
+  "description": "Yandex.Praktikum",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "pages": "gh-pages -d dist"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "file-loader": "^4.2.0",
+    "gh-pages": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "postcss-loader": "3.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "3.8.0",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.1.4",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "style-loader": "^1.0.1",
+    "validator": "11.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  }
+}
