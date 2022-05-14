@@ -1,0 +1,16 @@
+.auth-form__input {
+  font-family: Roboto;
+  font-size: 0.87rem;
+  width: 100%;
+  margin: 9px 0 3px 0;
+  padding: 10px 0 10px 0;
+  box-sizing: border-box;
+  background-color: white;
+  border: 0;
+  color: black;
+  border-bottom: 1px solid #cccccc;
+}
+
+.auth-form__input::placeholder {
+  color: #cccccc;
+}

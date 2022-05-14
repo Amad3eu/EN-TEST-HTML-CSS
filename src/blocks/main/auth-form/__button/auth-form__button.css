@@ -1,0 +1,7 @@
+.button.auth-form__button {
+  height: 64px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  width: 100%;
+  justify-content: center;
+}

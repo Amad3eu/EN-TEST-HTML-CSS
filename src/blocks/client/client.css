@@ -1,0 +1,20 @@
+@import url(./__title/client__title.css);
+@import url(./__text/client__text.css);
+
+.client {
+  padding: 80px 104px 72px 104px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .client {
+    padding: 30px 40px 40px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client {
+    padding: 20px 16px 35px 16px;
+  }
+}

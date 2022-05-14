@@ -1,0 +1,6 @@
+.auth-form__error-message.auth-form__error-message_usr-exists {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}

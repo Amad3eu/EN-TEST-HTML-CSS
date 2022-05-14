@@ -1,0 +1,22 @@
+.header__title-wrapper {
+  width: 600px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__title-wrapper {
+    width: 448px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__title-wrapper {
+    width: 288px;
+  }
+}
+
+@media screen and (max-width: 374px){
+  .header__title-wrapper {
+    width: 270px;
+  }
+}

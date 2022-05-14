@@ -1,0 +1,17 @@
+.client__text {
+  color: black;
+  font-size: 1.12rem;
+  line-height: 1.5;
+  margin: 24px 0 0 0;
+  width: 65%;
+}
+
+@media screen and (max-width: 1023px) {
+  .client__text {
+    margin: 16px 0 0 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}

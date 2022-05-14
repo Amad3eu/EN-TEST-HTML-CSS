@@ -1,0 +1,24 @@
+.button.header__button {
+  margin-left: 25px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+@media screen and (max-width: 1023px) {
+  .button.header__button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button.header__button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.12rem;
+    margin-left: 0;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+}

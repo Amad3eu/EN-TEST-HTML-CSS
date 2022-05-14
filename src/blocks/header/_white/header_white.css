@@ -1,0 +1,16 @@
+.header.header_white {
+  min-height: 80px;
+  background: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .header.header_white {
+    min-height: 66px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header.header_white {
+    min-height: 56px;
+  }
+}

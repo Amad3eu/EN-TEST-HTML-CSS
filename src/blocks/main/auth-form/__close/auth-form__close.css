@@ -1,0 +1,28 @@
+.auth-form__close {
+  position: absolute;
+  left: 445px;
+  top: -45px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../../../images/form/close.svg);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .auth-form__close {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .auth-form__close {
+    opacity: 1;
+    top: -40px;
+    left: 216px;
+    width: 24px;
+    height: 24px;
+  }
+}

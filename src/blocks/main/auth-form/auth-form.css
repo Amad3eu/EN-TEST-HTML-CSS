@@ -1,0 +1,44 @@
+@import url(./__button/auth-form__button.css);
+@import url(./__error-message/auth-form__error-message.css);
+@import url(./__input/auth-form__input.css);
+@import url(./__link/auth-form__link.css);
+@import url(./__wrapper/auth-form__wrapper.css);
+@import url(./__title/auth-form__title.css);
+@import url(./__close/auth-form__close.css);
+@import url(./__subtitle/auth-form__subtitle.css);
+@import url(./__other-action/auth-form__other-action.css);
+
+.auth-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Roboto, sans-serif;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px 36px 28px 36px;
+  width: 430px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  z-index: 200;
+}
+
+@media screen and (max-width: 767px) {
+  .auth-form {
+    transform: translate(0, 0);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    padding: 16px;
+    width: 100%;
+    height: calc(100vh - 56px);
+    box-sizing: border-box;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 200;
+  }
+
+  .auth-form + .overlay {
+    opacity: 0;
+    transition: 0.3s;
+  }
+}

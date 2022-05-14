@@ -1,0 +1,24 @@
+.header__form-input {
+  margin-left: 30px;
+  background-color: white;
+  box-sizing: border-box;
+  border: 0px;
+  width: 100%;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 1rem;
+  color: black;
+}
+
+.header__form-input::placeholder {
+  color: #b6bcbf;
+}
+
+@media screen and (max-width: 767px) {
+  .header__form-input {
+    margin-left: 0;
+    padding: 16px 20px;
+    font-size: 1.12rem;
+    border-radius: 100px;
+  }
+}

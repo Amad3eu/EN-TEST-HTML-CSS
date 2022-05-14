@@ -1,0 +1,31 @@
+.header__form {
+  display: flex;
+  margin: 64px 0 0 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 100px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__form {
+    margin-top: 48px;
+    width: 448px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__form {
+    width: 100%;
+    margin-top: 122px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0;
+  }
+}
+
+
+@media screen and (max-width: 374px){
+  .header__form {
+    min-width: 330px;
+  }
+}
